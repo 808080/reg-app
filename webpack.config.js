@@ -1,5 +1,5 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -31,6 +31,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
+    historyApiFallback: true,
     compress: true,
     port: 8080,
     hot: true,
